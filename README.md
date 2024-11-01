@@ -7,3 +7,8 @@ _Durante meus estudos nos cursos oferecidos pela plataforma Alura, desenvolvi pr
 
 ## Projetos
 - **GameMySQL**: Quiz sobre a linguagem SQL no Sistema de Gerenciamento de Banco de Dados MySQL.
+
+
+## Aplicações:
+- **GameMySQL**:
+1. Conhecimentos adquiridos no curso JavaScript: manipulando elementos no DOM.
