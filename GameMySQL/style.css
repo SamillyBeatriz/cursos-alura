@@ -31,24 +31,26 @@ html{
 }
 
 body{
-    font-family: var(--main-font);
-    
-    
+    font-family: var(--main-font); 
 }
-.app-sectionHome{
-    align-items: center;
+main{
+    align-items:center;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:center;
     min-height:100vh;
 }
 
+.app-sectionTitle{
+    display:flex;
+    align-items:center;
+}
 .app-title {
     color: var(--color-secundary);
-    font-size: 10rem;
+    font-size: 15rem;
     font-style: normal;
     font-weight: 200;
-    line-height: 150%;
+    line-height: 100%;
     max-width: 46rem;
 }
 
@@ -57,14 +59,27 @@ body{
     font-weight: 600;
     
 }
+
+.app-icons{
+    width: 30rem;
+    padding: 0 2rem;
+
+}
+
+.app-sectionHome{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
 .app-listButtons{
     display:flex;
     gap:15px;
     list-style-type: none;
-    padding: 5px 10px;
-    
-    
+    padding: 5px 10px;   
 }
+
 .btn-action{
     backdrop-filter:blur(30px);
     background: none;
