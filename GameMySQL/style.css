@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-primary: #00618b;
+    --color-secundary: #ffff;
+    --color-tertiary: #e78e00;
+    --main-font:  "Gaegu", sans-serif;
+
+}
+
+[data-contexto = "first-backgroundColor"]{
+    --main-bg: radial-gradient(circle, rgba(231,142,0,1) 0%, rgba(0,97,139,1) 100%);
+}
+[data-contexto = "second-backgroundColor"]{
+    --main-bg: linear-gradient(90deg, rgba(0,97,139,1) 0%, rgba(231,142,0,1) 50%);
+
+}
+[data-contexto = "third-backgroundColor"]{
+    --main-bg: linear-gradient(90deg, rgba(0,97,139,1) 50%, rgba(231,142,0,1) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: var(--main-bg);
+    font-size: 10px;
+    min-height: 100vh;
+}
+
+body{
+    font-family: var(--main-font);
+    
+    
+}
+.app-sectionHome{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height:100vh;
+}
+
+.app-title {
+    color: var(--color-secundary);
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 150%;
+    max-width: 46rem;
+}
+
+.app-titleStrong {
+    color:var(--color-primary);
+    font-weight: 600;
+    
+}
+.app-listButtons{
+    display:flex;
+    gap:15px;
+    list-style-type: none;
+    padding: 5px 10px;
+    
+    
+}
+.btn-action{
+    backdrop-filter:blur(30px);
+    background: none;
+    border: 2px solid rgba(255,255,255,0.18);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(277,228,237,0.37);
+    color:var(--color-secundary);
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 1.2rem;
+    
+}
+
