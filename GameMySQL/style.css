@@ -12,11 +12,11 @@
     --main-bg: radial-gradient(circle, rgba(231,142,0,1) 0%, rgba(0,97,139,1) 100%);
 }
 [data-contexto = "second-backgroundColor"]{
-    --main-bg: linear-gradient(90deg, rgba(0,97,139,1) 0%, rgba(231,142,0,1) 50%);
+    --main-bg: linear-gradient(-80deg, rgba(0,97,139,1) 5%, rgba(231,142,0,1) 95%);
 
 }
 [data-contexto = "third-backgroundColor"]{
-    --main-bg: linear-gradient(90deg, rgba(0,97,139,1) 50%, rgba(231,142,0,1) 100%);
+    --main-bg: linear-gradient(80deg, rgba(0,97,139,1) 5%, rgba(231,142,0,1) 100%);
 }
 
 *{
@@ -31,19 +31,27 @@ html{
 }
 
 body{
-    font-family: var(--main-font); 
-}
-main{
+    font-family: var(--main-font);
+    min-height: 100vh;
     align-items:center;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    min-height:100vh;
+    
+}
+main{
+    min-height:50vh;
+    max-width: 60vw;
+    backdrop-filter:blur(180px);
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .app-sectionTitle{
     display:flex;
     align-items:center;
+    padding:20px;
 }
 .app-title {
     color: var(--color-secundary);
@@ -73,6 +81,10 @@ main{
     padding: 10px 0;
 }
 
+.description{
+    font-size: 6rem;
+}
+
 .app-listButtons{
     display:flex;
     gap:15px;
@@ -82,10 +94,10 @@ main{
 
 .btn-action{
     backdrop-filter:blur(30px);
-    background: none;
-    border: 2px solid rgba(255,255,255,0.18);
+    background-color: rgba(231,142,0,1);
+    border: none;
     border-radius: 15px;
-    box-shadow: 0px 0px 30px rgba(277,228,237,0.37);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     color:var(--color-secundary);
     cursor: pointer;
     font-size: 1.8rem;
